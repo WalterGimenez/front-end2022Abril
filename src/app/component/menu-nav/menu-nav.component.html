@@ -3,15 +3,17 @@
         <nav class="navbar navbar-expand-md navbar-succes bg-sucess">
             
             <ul class="navbar-nav">
-                <div><h2 class="navbar-brand">Mi app</h2> </div>
+                <div><app-ap-logo></app-ap-logo></div>
+                <div class="yop">#YoProgramo</div>
                 <li></li>
-                <li><a *ngIf="authentication.isUserLogged()" class="nav-link" routerLink="/" routerLinkActive="active">Home</a></li>
-                <li><a *ngIf="authentication.isUserLogged()" class="nav-link" routerLink="/list" routerLinkActive="active">To Do</a></li>
+              <!-- <li><a *ngIf="authentication.isUserLogged()" class="nav-link" routerLink="/" routerLinkActive="active">Home</a></li>
+                <li><a *ngIf="authentication.isUserLogged()" class="nav-link" routerLink="/list" routerLinkActive="active">To Do</a></li>-->
             </ul>
     
             <ul class="navbar-nav navbar-collapse justify-content-end">
+                <li><app-redes></app-redes></li>
                 <li><a *ngIf="!authentication.isUserLogged()" class="nav-link" routerLink="/login" routerLinkActive="active">Login</a></li>
-                <li><a *ngIf="authentication.isUserLogged()" class="nav-link" routerLink="/logout" routerLinkActive="active">Logout</a></li>
+                <li><a *ngIf="authentication.isUserLogged()" class="nav-link" routerLink="/" routerLinkActive="active">Logout</a></li>
             </ul>
         </nav>
     </header>

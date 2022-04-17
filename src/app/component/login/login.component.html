@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="alert alter-warning" *ngIf="invalidLogin">{{ errorMessage }}</div>
+    
+    <div>
+        User Name: <input type="text" name="username" [(ngModel)] = "username" placeholder="Usuario"/>
+        Password: <input type="password" name="password" [(ngModel)]= "password" placeholder="Contraseña"/>
+        <button (click)="hadleLogin()"  class="btn btn-primary">Login</button>
+    </div>
+</div>
