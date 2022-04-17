@@ -6,14 +6,12 @@
                 <div><app-ap-logo></app-ap-logo></div>
                 <div class="yop">#YoProgramo</div>
                 <li></li>
-              <!-- <li><a *ngIf="authentication.isUserLogged()" class="nav-link" routerLink="/" routerLinkActive="active">Home</a></li>
-                <li><a *ngIf="authentication.isUserLogged()" class="nav-link" routerLink="/list" routerLinkActive="active">To Do</a></li>-->
             </ul>
     
             <ul class="navbar-nav navbar-collapse justify-content-end">
                 <li><app-redes></app-redes></li>
                 <li><a *ngIf="!authentication.isUserLogged()" class="nav-link" routerLink="/login" routerLinkActive="active">Login</a></li>
-                <li><a *ngIf="authentication.isUserLogged()" class="nav-link" routerLink="/" routerLinkActive="active">Logout</a></li>
+                <li><a (click)="logout()"  *ngIf="authentication.isUserLogged()" class="nav-link" routerLink="/" routerLinkActive="active">Logout</a></li>
             </ul>
         </nav>
     </header>

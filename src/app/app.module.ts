@@ -10,6 +10,7 @@ import { ApLogoComponent } from './component/ap-logo/ap-logo.component';
 import { RedesComponent } from './component/redes/redes.component';
 import { LoginComponent } from './component/login/login.component';
 import { ErrorComponent } from './component/error/error.component';
+import { LogoutComponent } from './component/logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ErrorComponent } from './component/error/error.component';
     ApLogoComponent,
     RedesComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

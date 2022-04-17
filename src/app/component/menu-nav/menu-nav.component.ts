@@ -12,5 +12,7 @@ export class MenuNavComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  logout(){
+    this.authentication.logout();
+  }
 }
