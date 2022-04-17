@@ -8,7 +8,7 @@ import { AuthenticationService } from 'src/app/service/authentication.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  username = "walter";
+  username!: string;
   password!: string;
   errorMessage = "Credenciales inválidas";
   invalidLogin = false;
