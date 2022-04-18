@@ -10,9 +10,13 @@
     
             <ul class="navbar-nav navbar-collapse justify-content-end">
                 <li><app-redes></app-redes></li>
-                <li><a *ngIf="!authentication.isUserLogged()" class="nav-link" routerLink="/login" routerLinkActive="active">Login</a></li>
-                <li><a (click)="logout()"  *ngIf="authentication.isUserLogged()" class="nav-link" routerLink="/" routerLinkActive="active">Logout</a></li>
+                <li><button  *ngIf="!authentication.isUserLogged()" class="nav-link btn btn-primary" routerLink="/login" routerLinkActive="active">Login</button></li>
+                <li><button (click)="logout()"  *ngIf="authentication.isUserLogged()" class="nav-link btn btn-primary" routerLink="/" routerLinkActive="active">Logout</button></li>
             </ul>
         </nav>
     </header>
+    <app-banner></app-banner>
+    <app-about></app-about>
+    <app-experiencia></app-experiencia>
 </div>
+

@@ -17,6 +17,9 @@ import { RedesComponent } from './component/redes/redes.component';
 import { LoginComponent } from './component/login/login.component';
 import { ErrorComponent } from './component/error/error.component';
 import { LogoutComponent } from './component/logout/logout.component';
+import { BannerComponent } from './component/banner/banner.component';
+import { AboutComponent } from './component/about/about.component';
+import { ExperienciaComponent } from './component/experiencia/experiencia.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { LogoutComponent } from './component/logout/logout.component';
     RedesComponent,
     LoginComponent,
     ErrorComponent,
-    LogoutComponent
+    LogoutComponent,
+    BannerComponent,
+    AboutComponent,
+    ExperienciaComponent
   ],
   imports: [
     BrowserModule,

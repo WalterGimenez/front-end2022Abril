@@ -4,13 +4,18 @@
 }
 
 .yop{
-    margin-top: 25px;
+    margin-top: 38px;
 }
 
-a{
+
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #C2684A;
     color: white;
-    /*background-color: #C2684A;*/
-    padding-right: 20px;
 }
 
+.img-flui{
+    background-color: bisque;
+}
 

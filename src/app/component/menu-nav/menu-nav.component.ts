@@ -8,6 +8,8 @@ import { AuthenticationService } from 'src/app/service/authentication.service';
 })
 export class MenuNavComponent implements OnInit {
 
+ 
+
   constructor(public authentication: AuthenticationService) { }
 
   ngOnInit(): void {

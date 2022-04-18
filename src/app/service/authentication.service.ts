@@ -4,14 +4,16 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AuthenticationService {
-
+  switchShow!: boolean;
   constructor() { }
 
   authenticate(username: string, password: string){
     //console.log('before' + this.isUserLogged());
     if(username === "walter" && password === "1234"){
       sessionStorage.setItem('authenticaterUser', username);
-      //console.log('after ' + this.isUserLogged());
+       //prueba para mostrar pencil
+      
+      this.switchShow = true;
       return true;
     }else{
       return false;

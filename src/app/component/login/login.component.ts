@@ -14,12 +14,15 @@ export class LoginComponent implements OnInit {
   invalidLogin = false;
 
   constructor(private router: Router, private authentication: AuthenticationService) { }
+  
+  switch2!: boolean;
 
   ngOnInit(): void {
   }
 
   hadleLogin(){
     if(this.authentication.authenticate(this.username, this.password)){
+      this.switch2 == true; 
       this.router.navigate(['/']);
     }else{
       this.invalidLogin = true;

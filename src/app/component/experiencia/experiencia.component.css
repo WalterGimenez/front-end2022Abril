@@ -1,0 +1,28 @@
+
+h1{
+    margin-left: 25px;
+}
+
+h1,h3{
+    display: inline;
+}
+
+#trabajo{
+    width: 80px;
+    margin-left: 26px;
+    margin-top: -10px;
+}
+
+#unaj{
+    margin-top: 20px;
+}
+
+.row{
+    padding-top: 15px;
+}
+
+
+li{
+    list-style: none;
+    margin-left: -5px;
+}

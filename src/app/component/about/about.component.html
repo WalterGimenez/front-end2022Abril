@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+        <img src="./../assets/gimenez.png" alt="foto Walter Gimenez" class="img-fluid" id="gim">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
+      <!--  <img  src="./../assets/pencil-solid.svg" alt="logo editar" class="img-fluid" [id]="datoPortfolio.pencilId" > -->
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1>{{ datoPortfolio.name }} {{datoPortfolio.lastname}}</h1>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+        <p>{{ datoPortfolio.position }}<br>{{ datoPortfolio.place }}</p>
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <img [src]="datoPortfolio.photoMin" alt="logo Ministerio de Desarrollo" id="desarrollo">
+    </div>
+    <br>
+    <div class="col-xs-12 col-sm-12 col-md-11 col-lg-12" >
+        <h3>Acerca de</h3>
+    </div>
+    
+    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" >
+        <p class="acerca">{{ datoPortfolio.about }} <br> {{ datoPortfolio.about2 }}</p>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+        <img *ngIf="authentication.isUserLogged()" src="./../assets/pencil-solid.svg" alt=" logo lápiz" class="img-fluid" [id]="datoPortfolio.pencilId">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"></div>
+
+</div>

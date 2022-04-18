@@ -1,0 +1,22 @@
+#gim{
+    
+    width: 180px;
+    border-radius: 100px;
+    margin-top: -60px;
+    margin-left: 55px;
+    z-index: 5;
+ }
+ 
+ 
+ 
+ h1,h3, p{
+     margin-left: 25px;
+ }
+ 
+ 
+ #desarrollo{
+    height: 70px;
+    width: 160px;
+    margin-top: -15px;
+  }
+ 
