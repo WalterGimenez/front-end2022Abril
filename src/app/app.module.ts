@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,8 @@ import { ExperienciaComponent } from './component/experiencia/experiencia.compon
 import { EducationComponent } from './component/education/education.component';
 import { SkillComponent } from './component/skill/skill.component';
 import { ProyectComponent } from './component/proyect/proyect.component';
+import { AboutEditComponent } from './component/about-edit/about-edit.component';
+
 
 
 @NgModule({
@@ -39,7 +42,8 @@ import { ProyectComponent } from './component/proyect/proyect.component';
     ExperienciaComponent,
     EducationComponent,
     SkillComponent,
-    ProyectComponent
+    ProyectComponent,
+    AboutEditComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,8 @@ import { ProyectComponent } from './component/proyect/proyect.component';
     MatButtonModule,
     MatToolbarModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    NgbModule
 
   ],
   providers: [],

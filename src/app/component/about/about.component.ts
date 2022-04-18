@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from 'src/app/service/authentication.service';
 import { PortfolioService } from 'src/app/service/portfolio.service';
 
+
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -11,9 +13,11 @@ export class AboutComponent implements OnInit {
 
   datoPortfolio: any;
   photoUnaj: any;
+  mymodal!: any;
+  closeResult: string = '';
 
-  constructor(private datosPortfolio: PortfolioService,public authentication: AuthenticationService ) { }
-  //switch2!: boolean;
+  constructor(private datosPortfolio: PortfolioService, public authentication: AuthenticationService) { }
+  
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
       console.log(data);
@@ -26,8 +30,5 @@ export class AboutComponent implements OnInit {
     
     this.authentication.isUserLogged();
   }
-
-  /*switchShow(){
-    this.switch2 == true;
-  }*/
+  
 }
