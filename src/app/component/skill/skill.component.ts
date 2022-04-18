@@ -2,12 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/service/portfolio.service';
 
 @Component({
-  selector: 'app-error',
-  templateUrl: './error.component.html',
-  styleUrls: ['./error.component.css']
+  selector: 'app-skill',
+  templateUrl: './skill.component.html',
+  styleUrls: ['./skill.component.css']
 })
-export class ErrorComponent implements OnInit {
-  datoErroneo: any;
+
+export class SkillComponent implements OnInit {
+  skillList: any;
+  datoPortfolio: any;
   
 
   constructor(private datosPortfolio: PortfolioService) { }
@@ -15,8 +17,8 @@ export class ErrorComponent implements OnInit {
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
       console.log(data);
-      this.datoErroneo = data.error;
+      this.skillList = data.skills;
+      this.datoPortfolio = data;
     });
   }
-
 }

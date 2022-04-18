@@ -1,2 +1,15 @@
-<h1>La página solicitada no existe, intente nuevamente.....</h1>
-<button routerLink="/" class="btn btn-primary">Go to home</button>
+<div class="container">
+    <div class="row" id="pe">
+        <div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <img [src]="datoErroneo.img" class="img-fluid" alt="signo eclamación">
+        </div>
+        <div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+            <h3>{{ datoErroneo.message}}</h3>
+        <div>
+        <div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <a href="/">
+                <button class="btn btn-dark">Regresar</button>
+            </a>        
+        </div>
+    </div>
+</div>

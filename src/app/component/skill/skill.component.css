@@ -1,0 +1,30 @@
+.row{
+    padding: 20px;
+}
+
+h1{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+li{
+    list-style: none;
+}
+.progress-bar{
+    background-color: #C2684A;
+    
+}
+
+.progress {
+    width: 800px;
+}
+
+p{
+    font-weight: bold;
+    display: inline;
+}
+
+#porcentaje{
+    
+    display: inline;
+}

@@ -1,0 +1,30 @@
+<div>
+    <div class="row">
+        <div  class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
+            <h1>Educación</h1>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+            <img *ngIf="authentication.isUserLogged()" [src]="datoPortfolio.add" alt=" logo agregar" class="img-fluid" [id]="datoPortfolio.addId">
+        </div>
+    </div>
+    <ul>
+        <li *ngFor="let educacion of educationList">
+            <div class="row">
+                <div class="col-lg-1">
+                    <img [src]="educacion.img" alt="logo" id="educa">  
+                </div>
+                <div class="col-lg-9">
+                    <h2>{{educacion.name}} <h3>{{educacion.start}}/{{educacion.end}}</h3></h2>
+                    <p>{{educacion.description}}</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+                    <img *ngIf="authentication.isUserLogged()" [src]="datoPortfolio.pencil" alt=" logo editar" class="img-fluid" [id]="datoPortfolio.pencilId">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+                    <img  *ngIf="authentication.isUserLogged()" [src]="datoPortfolio.trash" alt=" logo borrar" class="img-fluid" [id]="datoPortfolio.trashId">
+                </div>
+            </div>
+                
+        </li>
+    </ul>
+</div>

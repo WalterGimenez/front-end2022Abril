@@ -1,7 +1,6 @@
 .img-fluid{
     width: 150px;
-    background-color: bisque;
-    color: bisque;
+    border-radius: 100px;
 }
 
 .alert{

@@ -1,0 +1,36 @@
+<div>
+    <div class="row">
+        <div  class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
+            <h1>Hard & Soft</h1>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+            <img [src]="datoPortfolio.add" alt=" logo agregar" class="img-fluid" [id]="datoPortfolio.addId">
+        </div>
+    </div>
+ 
+    <ul>
+        <li  *ngFor="let skill of skillList">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+                    <p>{{skill.description}}</p>
+                </div>
+                <div class="progress my-2 col-xs-12 col-sm-12 col-md-6 col-lg-8" >    
+                    <div class="progress-bar" role="progressbar" style="width: 50%" [ngStyle]="{'width.%':skill.percent}" aria-valuemin="0" aria-valuemax="100">{{ skill.percent}}</div>
+                    
+                </div>
+                
+                 
+                 <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+                    <p id="porcentaje">%</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+                    <img [src]="datoPortfolio.pencil" alt=" logo editar" class="img-fluid" [id]="datoPortfolio.pencilId">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+                    <img [src]="datoPortfolio.trash" alt=" logo borrar" class="img-fluid" [id]="datoPortfolio.trashId">
+                </div>
+            </div>
+            
+        </li>
+    </ul>
+</div>

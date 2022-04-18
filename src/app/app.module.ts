@@ -20,6 +20,9 @@ import { LogoutComponent } from './component/logout/logout.component';
 import { BannerComponent } from './component/banner/banner.component';
 import { AboutComponent } from './component/about/about.component';
 import { ExperienciaComponent } from './component/experiencia/experiencia.component';
+import { EducationComponent } from './component/education/education.component';
+import { SkillComponent } from './component/skill/skill.component';
+import { ProyectComponent } from './component/proyect/proyect.component';
 
 
 @NgModule({
@@ -33,7 +36,10 @@ import { ExperienciaComponent } from './component/experiencia/experiencia.compon
     LogoutComponent,
     BannerComponent,
     AboutComponent,
-    ExperienciaComponent
+    ExperienciaComponent,
+    EducationComponent,
+    SkillComponent,
+    ProyectComponent
   ],
   imports: [
     BrowserModule,
