@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from 'src/app/service/authentication.service';
 import { PortfolioService } from 'src/app/service/portfolio.service';
 
 @Component({
@@ -12,7 +13,7 @@ export class SkillComponent implements OnInit {
   datoPortfolio: any;
   
 
-  constructor(private datosPortfolio: PortfolioService) { }
+  constructor(private datosPortfolio: PortfolioService, public authentication: AuthenticationService) { }
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {

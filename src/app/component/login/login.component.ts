@@ -28,4 +28,8 @@ export class LoginComponent implements OnInit {
       this.invalidLogin = true;
     }
   }
+
+  canceled(){
+    this.router.navigateByUrl("/");
+  }
 }

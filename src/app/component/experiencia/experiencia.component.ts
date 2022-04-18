@@ -14,7 +14,7 @@ export class ExperienciaComponent implements OnInit {
   datoPortfolio: any;
   
 
-  constructor(private datosPortfolio: PortfolioService,public authentication: AuthenticationService  ) { }
+  constructor(private datosPortfolio: PortfolioService, public authentication: AuthenticationService  ) { }
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {

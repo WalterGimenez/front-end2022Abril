@@ -1,9 +1,18 @@
 .img-fluid{
     width: 150px;
     border-radius: 100px;
+    margin-top: 20px;
 }
 
 .alert{
     color: red;
     font-size: 2em;
+}
+
+button{
+    margin: 10px;
+}
+
+.form-control{
+    border-radius: 10px;
 }
