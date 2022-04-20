@@ -1,1 +1,18 @@
-<p>about-edit works!</p>
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h1>Modificar Acerca de</h1>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="nombre">Acerca</label>
+                <input type="text" class="form-control" id="about" [(ngModel)]="modelPersona.about" name="about" >
+            </div>
+            <div >
+               
+            <button class="btn btn-success" (click)="Actualizar(modelPersona)" class="btn btn-primary">Guardar</button>
+            <button type="submit" class="btn btn-success" (click)="canceled()" >Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>

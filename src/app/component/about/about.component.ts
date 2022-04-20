@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Persona } from 'src/app/model/persona';
 import { AuthenticationService } from 'src/app/service/authentication.service';
 import { PortfolioService } from 'src/app/service/portfolio.service';
 
@@ -13,10 +14,10 @@ export class AboutComponent implements OnInit {
 
   datoPortfolio: any;
   photoUnaj: any;
-  mymodal!: any;
-  closeResult: string = '';
+  
 
   constructor(private datosPortfolio: PortfolioService, public authentication: AuthenticationService) { }
+  modelPersona = new Persona;
   
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
